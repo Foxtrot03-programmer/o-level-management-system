@@ -1,0 +1,176 @@
+/* Main stylesheet for the student management UI. Contains layout, form and table styles. */
+body { 
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;  
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 650px;
+    overflow-x: auto;
+}
+.card h2 {
+    color: #555;
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    color: #555;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+input,select {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+button:hover {
+    background-color: #218838;
+}
+.promote-btn {
+    background-color: #007bff;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+.promote-btn:hover {
+    background-color: #0069d9;
+}
+#promoteAllBtn {
+    background-color: #0069d9;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+#promoteAllBtn:hover { background-color: #0056b3; }
+.card form button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+button[onclick*="deleteStudent"] {
+    width: auto;
+    padding: 4px 8px;
+    background-color: #28a745;
+    font-size: 11px;
+}
+button[onclick*="deleteStudent"]:hover {
+    background-color: #218838;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    min-width: 600px;
+    font-size: 12px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px 4px;
+    text-align: center;
+    word-wrap: break-word;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: #777;
+    font-size: 12px;
+}
+
+/* Search functionality styles */
+#searchBtn, #clearSearchBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+#searchBtn:hover {
+    background-color: #0056b3;
+}
+#clearSearchBtn {
+    background-color: #28a745;
+}
+#clearSearchBtn:hover {
+    background-color: #218838;
+}
+#searchResults {
+    display: none;
+    background-color: #e8f5e9;
+    border-left: 4px solid #4CAF50;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #2e7d32;
+    font-size: 13px;
+}
+
+.spaced {
+    margin-top: 18px;
+}
+.search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.search-controls {
+    margin-bottom: 15px;
+}
+.note {
+    font-size:12px;
+    color:#555;
+    margin-top:8px;
+}
+footer .credit {
+    font-size:12px;
+    color:#666;
+    margin-top:4px;
+}
